@@ -9,10 +9,6 @@
 #No matter what method you adopt,the cert will be auto renew in 60 days,no need to worry expirations
 #For more info,please check acme official document.
 
-#Author:https://t.me/RootUbuntu
-#Date:2022-10-13
-#Version:0.0.1
-
 #Some constans here
 OS_CHECK=''
 CERT_DOMAIN=''
@@ -157,6 +153,18 @@ port_check() {
 ssl_cert_issue() {
     local method=""
     echo -E ""
+    LOGI "
+ ███▄ ▄███▓▓█████  ██▓     ██▓▓█████▄  ▒█████  ▒███████▒
+▓██▒▀█▀ ██▒▓█   ▀ ▓██▒    ▓██▒▒██▀ ██▌▒██▒  ██▒▒ ▒ ▒ ▄▀░
+▓██    ▓██░▒███   ▒██░    ▒██▒░██   █▌▒██░  ██▒░ ▒ ▄▀▒░ 
+▒██    ▒██ ▒▓█  ▄ ▒██░    ░██░░▓█▄   ▌▒██   ██░  ▄▀▒   ░
+▒██▒   ░██▒░▒████▒░██████▒░██░░▒████▓ ░ ████▓▒░▒███████▒
+░ ▒░   ░  ░░░ ▒░ ░░ ▒░▓  ░░▓   ▒▒▓  ▒ ░ ▒░▒░▒░ ░▒▒ ▓░▒░▒
+░  ░      ░ ░ ░  ░░ ░ ▒  ░ ▒ ░ ░ ▒  ▒   ░ ▒ ▒░ ░░▒ ▒ ░ ▒
+░      ░      ░     ░ ░    ▒ ░ ░ ░  ░ ░ ░ ░ ▒  ░ ░ ░ ░ ░
+       ░      ░  ░    ░  ░ ░     ░        ░ ░    ░ ░    
+                               ░               ░        
+"
     LOGI "The script currently provides two ways to implement certificate issuance"
     LOGI "Mode 1: acme standalone mode, need to keep the port open"
     LOGI "Method 2: acme DNS API mode, need to provide Cloudflare Global API Key"
