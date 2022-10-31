@@ -165,6 +165,8 @@ ssl_cert_issue() {
        ░      ░  ░    ░  ░ ░     ░        ░ ░    ░ ░    
                                ░               ░        
 "
+    LOGI "github : melidoz"
+    LOGI "Telegram channel : @melidoz"
     LOGI "The script currently provides two ways to implement certificate issuance"
     LOGI "Mode 1: acme standalone mode, need to keep the port open"
     LOGI "Method 2: acme DNS API mode, need to provide Cloudflare Global API Key"
