@@ -1,15 +1,5 @@
 #!/bin/bash
 
-#This shell script is used for issue a Let'sEncrypt Cert And installation more convenitenly
-#This shell script now provids two methods for cert issue
-#   1.Standalone Mode:the easiest way to issue certs,but need to keep port open alaways
-#   2.DNS API Mode:the most strong method but a little bit complicated,which can help u issue wildcard certs
-#     No need to keep port open
-
-#No matter what method you adopt,the cert will be auto renew in 60 days,no need to worry expirations
-#For more info,please check acme official document.
-
-#Some constans here
 OS_CHECK=''
 CERT_DOMAIN=''
 CERT_DEFAULT_INSTALL_PATH='/root/cert/'
