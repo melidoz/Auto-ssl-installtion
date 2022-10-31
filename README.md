@@ -20,7 +20,7 @@ apt install curl
 
 # Install & Upgrade
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/melidoz/Auto-ssl-installtion/main/ssl.sh
+bash <(curl -Ls https://raw.githubusercontent.com/melidoz/Auto-ssl-installtion/main/ssl.sh)
 ```
 # Remove & Uninstall .acme ssl
 ```
